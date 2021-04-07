@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, url_for
 import smtplib
 import requests as req
-import json
 from datetime import datetime
 import markdown
 
