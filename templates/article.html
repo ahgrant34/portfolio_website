@@ -1,0 +1,42 @@
+{% extends "base-article.html" %}
+
+{% block title %}
+    Andrew Grant's Portfolio
+    {% endblock %}
+
+
+{% block content %}
+
+
+<div class="container">
+
+    <div class="div-title"><h1 class="font-title"> {{title}}</h1> </div>
+
+    <div class="div-desc"><h4 class="font-desc"> {{description}}</h4> </div>
+
+    <div class="div-author-posted">
+    <p class="font-author-posted"> By: {{author}} | posted on: {{date_posted}} | last edited on: {{date_edited}}</p>
+    </div>
+
+    <div class="div-github">
+    <a class="github" href="{{github_link}}">GitHub Link</a>
+    </div>
+
+    <div id="article-logo" class="article-img">
+      <a>
+        <img src="http://localhost:1337{{article_banner_url}}" alt="..." class="center"
+             style='border:1px solid black'>
+      </a>
+
+    </div>
+
+
+</div>
+
+<div class="container">
+<div>{{content| safe}}</div>
+</div>
+
+
+
+{% endblock %}

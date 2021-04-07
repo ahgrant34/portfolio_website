@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}
+    Andrew Grant's Portfolio
+    {% endblock %}
+
+{% block content %}
+<br/><br/>
+<div class="container">
+    <div class="row mb-2">
+
+        <div class="col-md-4">
+            <img class="am-headshot" src="static/images/headshot.png" width="300">
+            </div>
+
+        <div class="col-md-4 ">
+            <h1 class="aboutme">About Me</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+<br/><br/>
+<div class="container">
+
+    <p class="am-para">
+        I am a recent graduate from University of North Carolina at Charlotte with a Master of Science in Data Science
+        and Business Analytics.
+    </p>
+    <p class="am-para">In addition to data science, I also enjoy watching NC State Athletics, cooking/baking, and
+        exploring Charlotte with my girlfriend and dog.
+    </p>
+
+    <br/><br/>
+    <div class="row mb-2">
+        <div class="col-md-6 am-lists">
+            <h2 class="am-para">Programming</h2>
+
+            <ul class="roman am-list-white-font">
+                 <li>R/R-studio</li>
+                    <ul class="square">
+                      <li>dplyr, ggplot, R Markdown, Shiny</li>
+                     </ul>
+                 <li>Python
+                     <ul class="square">
+                      <li>Pandas, NumPy, Scikit-learn, Pytorch, Nltk, Dash, Flask, Seaborn</li>
+                     </ul>
+                 </li>
+                 <li>SQL</li>
+                    <ul class="square">
+                      <li>MySQL, PostgreSQL</li>
+                     </ul>
+                 <li>SAS</li>
+                    <ul class="square">
+                      <li>Enterprise Guide, Base SAS</li>
+                     </ul>
+                <li>Microsoft Office</li>
+                    <ul class="square">
+                      <li>Word, Excel, Powerpoint</li>
+                     </ul>
+                <li>GitHub</li>
+
+            </ul>
+        </div>
+        <div class="col-md-6 am-lists">
+           <h2 class="am-para">Skills</h2>
+            <ul class="roman am-list-white-font">
+                 <li>Data Wrangling</li>
+                 <li>Data Cleaning</li>
+                 <li>Natural Language Processing (NLP)</li>
+                 <li>Data Visualization</li>
+                 <li>Machine Learning</li>
+                 <li>Deep Learning</li>
+                 <li>Creating Interactive Dashboards</li>
+                 <li>Problem Solving</li>
+                 <li>Data Analytics</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+ <div class="row bottom-links">
+  <div class="col-sm-4 bottom-link">
+    <a href="https://github.com/ahgrant34" ><img  src="{{url_for('static', filename='images/GitHub_Logo_White.png')}}"
+                                                 alt="GitHub" style="width:50%"></a>
+  </div>
+  <div class="col-sm-4 bottom-link">
+    <a href="https://www.linkedin.com/in/andrew-grant-620103a8/" ><img src="{{url_for('static', filename='images/Linkedin.png')}}"
+                                                 alt="GitHub" style="width:50%"></a>
+  </div>
+  <div class="col-sm-4 bottom-link">
+    <a href="mailto: andrewhansgrant@gmail.com" ><img src="{{url_for('static', filename='images/gmail.png')}}"
+                                                 alt="Gmail" style="width:50%"></a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Andrew Grant's Portfolio
+    {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mb-2">
+        <h1 class="resume">Welcome to My Portfolio Website</h1>
+
+    </div>
+</div>
+
+<br/><br/>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static', filename='images/santapaws.png')}}" class="d-block w-100 homepage" alt="...">
+        <div class="bottom-middle">
+            <a href="{{ url_for('aboutme')}}" class="btn btn-light btn-outline-dark carousel-btn">Read About My Background and Experience</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='images/projects.jpeg')}}" class="d-block w-100 homepage" alt="...">
+        <div class="bottom-middle">
+            <a href="{{ url_for('projects')}}" class="btn btn-light btn-outline-dark carousel-btn">View My Projects Blog</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='images/resume.png')}}" class="d-block w-100 homepage" alt="...">
+        <div class="bottom-middle">
+            <a href="{{ url_for('resume')}}" class="btn btn-light btn-outline-dark carousel-btn">View My Resume</a>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static', filename='images/contactme.png')}}" class="d-block w-100 homepage" alt="...">
+        <div class="bottom-middle">
+            <a href="{{ url_for('contactinfo')}}" class="btn btn-light btn-outline-dark carousel-btn">Contact Me</a>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ <div class="row bottom-links">
+  <div class="col-sm-4 bottom-link">
+    <a href="https://github.com/ahgrant34" ><img  src="{{url_for('static', filename='images/GitHub_Logo_White.png')}}"
+                                                 alt="GitHub" style="width:50%"></a>
+  </div>
+  <div class="col-sm-4 bottom-link">
+    <a href="https://www.linkedin.com/in/andrew-grant-620103a8/" ><img src="{{url_for('static', filename='images/Linkedin.png')}}"
+                                                 alt="GitHub" style="width:50%"></a>
+  </div>
+  <div class="col-sm-4 bottom-link">
+    <a href="mailto: andrewhansgrant@gmail.com" ><img src="{{url_for('static', filename='images/gmail.png')}}"
+                                                 alt="Gmail" style="width:50%"></a>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+

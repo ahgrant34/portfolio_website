@@ -1,0 +1,37 @@
+{% extends "base-project.html" %}
+{% block title %}Andrew Grant's Portfolio{% endblock %}
+{% block content %}
+
+
+
+<div class="header" style="background-image: url('static/images/projects-banner.jpeg');
+  background-size: cover; height:480px; padding-top:80px;">
+  <h1 class="black-center">Projects</h1>
+</div>
+
+<br/><br/>
+<div class="container">
+{% for article in articles | reverse %}
+
+<div class="card mb-3 border-dark round-corners">
+  <img src="http://localhost:1337{{article.card_image.url}}" alt="..." class="card-img-top" >
+  <div class="card-body border-dark">
+    <h4 class="card-title">{{article.title}}</h4>
+    <p class="card-text">{{article.description}}</p>
+    <p class="card-text"><a href="{{article.github_link}}">GitHub Link</a></p>
+    <a href="{{ url_for('project', num=article.id) }}" class="btn btn-primary">Read Article</a>
+    <p class="card-text" style="margin-top: 3%">Categories:
+        {% for category in article.categories %}
+           <button type="button" class="btn btn-outline-dark">{{category.name}}</button>
+        {% endfor %}  </p>
+    <p class="card-text"><small class="text-muted">By: {{article.author}} | posted on: {{article.date_posted}} |
+        last edited on: {{article.date_edited}}</small></p>
+
+
+  </div>
+</div>
+<br/><br/>
+{% endfor %}
+</div>
+{% endblock %}
+

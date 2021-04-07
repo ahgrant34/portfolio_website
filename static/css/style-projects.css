@@ -1,0 +1,33 @@
+h1 {
+	color: white;
+	font-size: 4rem;
+	float: left;
+	text-align: center;
+	height: 100%;
+	padding-top: 5%;
+	width: 100%;
+}
+
+
+.white-center{
+	color: white;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+body{
+    background: #2F4F4F;
+
+}
+
+
+div.container {
+  background: #2F4F4F;
+  max-width:800px
+}
+
+.round-corners {
+    border-radius: 2%;
+}
+

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Andrew Grant's Portfolio
+    {% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <h1>Thank you for your submission. I will respond as quickly as possible.</h1>
+    </div>
+
+
+    <div class="container">
+
+        <p class="form-resp-head"> The below message was submitted:</p>
+        <br/>
+        <p class="form-confirm"> <b>Name:</b>  {{ first_name }} {{ last_name }} </p>
+        <p class="form-confirm"> <b>Email Address:</b>  {{email}} </p>
+        <p class="form-confirm"> <b>Message:</b>  {{message}} </p>
+
+
+
+    </div>
+{% endblock %}

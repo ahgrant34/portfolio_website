@@ -1,0 +1,88 @@
+body{
+    background: #F5F5F5;
+
+}
+
+.container{
+    width:70%
+}
+
+.div-title{
+	text-align: center;
+	padding-top: 10%;
+	width: 100%;
+	padding-bottom: 3%;
+
+}
+
+.font-title{
+    color: black;
+	font-size: 4rem;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.div-desc{
+    padding-bottom: 1%;
+}
+
+.font-desc{
+    color: black;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+
+.div-author-posted{
+
+}
+
+.font-author-posted{
+    text-align: center;
+}
+
+.div-github{
+
+}
+
+.github {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 2%;
+
+}
+
+#article-logo img {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:block
+}
+
+.article-img{
+    padding-bottom: 5%;
+}
+
+.img-center{
+    margin-left: auto;
+    margin-right: auto;
+    display:block
+}
+
+.article-para{
+    text-indent: 2.0em;
+    font-size: 1.3rem;
+    line-height: 1.7;
+
+}
+
+
+
+
+

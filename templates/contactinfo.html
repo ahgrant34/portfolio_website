@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Andrew Grant's Portfolio{% endblock %}
+{% block content %}
+
+
+<div class="container">
+    <div class="row mb-2">
+        <h1 class="resume">Contact Me</h1>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <br/><br/>
+
+    <form action="/form" method="POST">
+
+      <div class="row g-3">
+          <div class="col form-group">
+            <input type="text" class="form-control" placeholder="First name" name="first_name">
+          </div>
+          <div class="col form-group">
+            <input type="text" class="form-control" placeholder="Last name" name="last_name">
+          </div>
+    </div>
+        <br/>
+
+        <div class="mb-3 form-group">
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+            placeholder="Email Address" name="email">
+      </div>
+        <br/>
+
+
+      <div class="form-floating">
+          <textarea class="form-control"
+                    id="floatingTextarea2" placeholder="Message" name="message" style="height: 150px"></textarea>
+          <label for="floatingTextarea2">Message</label>
+      </div>
+
+        <br/>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
