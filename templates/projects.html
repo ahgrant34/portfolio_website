@@ -14,7 +14,7 @@
 {% for article in articles | reverse %}
 
 <div class="card mb-3 border-dark round-corners">
-  <img src="http://localhost:1337{{article.card_image.url}}" alt="..." class="card-img-top" >
+  <img src="https://ahg-portfolio-strapi.herokuapp.com{{article.card_image.url}}" alt="..." class="card-img-top" >
   <div class="card-body border-dark">
     <h4 class="card-title">{{article.title}}</h4>
     <p class="card-text">{{article.description}}</p>

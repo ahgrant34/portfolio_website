@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 # pulling in API data and reformatting
 
-articles = req.get("http://localhost:1337/articles").json()
+articles = req.get("https://ahg-portfolio-strapi.herokuapp.com/articles").json()
+
+#articles = req.get("http://localhost:1337/articles").json()
 
 def date_formatter(articles):
     for article in articles:
@@ -47,7 +49,8 @@ def aboutme():
 @app.route("/projects")
 def projects():
 
-    articles = req.get("http://localhost:1337/articles").json()
+    articles = req.get("https://ahg-portfolio-strapi.herokuapp.com/articles").json()
+    #articles = req.get("http://localhost:1337/articles").json()
 
     date_formatter(articles)
 
@@ -67,7 +70,9 @@ def test():
 
 @app.route("/project/<int:num>")
 def project(num):
-    articles = req.get("http://localhost:1337/articles").json()
+
+    articles = req.get("https://ahg-portfolio-strapi.herokuapp.com/articles").json()
+    #articles = req.get("http://localhost:1337/articles").json()
 
     date_formatter(articles)
 
