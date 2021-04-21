@@ -3,6 +3,7 @@ import smtplib
 import requests as req
 from datetime import datetime
 import markdown
+import os
 
 app = Flask(__name__)
 
@@ -116,7 +117,7 @@ def form():
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    server.login("andrewhansgrantwebsite@gmail.com", "cheesepe@s1517")
+    server.login("andrewhansgrantwebsite@gmail.com", os.environ[email_password])
     server.sendmail("andrewhansgrantwebsite@gmail.com", "andrewhansgrant@gmail.com", email_message)
 
     return render_template("form.html", first_name=first_name, last_name=last_name, email=email, message=message, email_message=email_message)
